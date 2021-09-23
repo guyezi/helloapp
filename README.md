@@ -28,15 +28,15 @@ make menuconfig
 
 5. ```make -j8 download V=99```
 
-6. ```$ make package/obm-mmp/clean V=99```
+6. ```$ make package/luci-app-ssr-plus/clean V=99```
 
-8. ```$ make package/obm-mmp/compile V=99```
+8. ```$ make package/luci-app-ssr-plus/compile V=99```
 
-9. ```$ make package/obm-mmp/install V=99```
+9. ```$ make package/luci-app-ssr-plus/install V=99```
  
-10. ```$ make package/obm-mmp/{clean,compile,install} V=99```
+10. ```$ make package/luci-app-ssr-plus/{clean,compile,install} V=99```
  
-11. ```$ make package/feeds/packages/nginx/{clean, compile, install} V=99```
+11. ```$ make package/feeds/packages/luci-app-baidupcs-web/{clean,compile,install} V=99```
  
 12. ```$ make tools/automake/compile```
 
@@ -48,6 +48,6 @@ make menuconfig
 
 15. ```$ make target/linux/install```
 
-16. ```$ make target/linux/{clean, compile, install}```
+16. ```$ make target/linux/{clean,compile,install}```
 
 
