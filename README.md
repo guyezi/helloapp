@@ -41,7 +41,9 @@ make menuconfig
 12. ```$ make tools/automake/compile```
 
 13. ```$ make toolchain/{clean, compile, install}```
+
 重编kernel:
+
 14. ```$ make target/linux/compile```
 
 15. ```$ make target/linux/install```
