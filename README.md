@@ -50,4 +50,12 @@ make menuconfig
 
 16. ```$ make target/linux/{clean,compile,install}```
 
+生成 `Packages` `Packages.gz` `Packages.manifest`
+
+17. ```make package/index```
+
+18. ```ipkg-make-index.sh . 2>&1 > Packages```
+
+20. ```gzip -9c Packages > Packages.gz```
+
 
