@@ -26,22 +26,22 @@ make menuconfig
    make menuconfig
    ```
 
-5. Run `make -j8 download V=99` 
+5. Run ```make -j8 download V=99```
 
-6. Run `$ make package/obm-mmp/clean V=s`
-  `$ make package/obm-mmp/compile V=s`
-  `$ make package/obm-mmp/install V=s`
+6. Run ```$ make package/obm-mmp/clean V=s```
+  ```$ make package/obm-mmp/compile V=s```
+  ```$ make package/obm-mmp/install V=s```
   or
-  `$ make package/obm-mmp/{clean,compile,install} V=99`
+  ```$ make package/obm-mmp/{clean,compile,install} V=99```
   -----------------------
-  `$ make package/feeds/packages/nginx/{clean, compile, install} V=99`
-  `$ make tools/automake/compile`
-  `$ make toolchain/{clean, compile, install}`
+  ```$ make package/feeds/packages/nginx/{clean, compile, install} V=99```
+  ```$ make tools/automake/compile```
+  ```$ make toolchain/{clean, compile, install}```
 
   重编kernel:
-  `$ make target/linux/compile`
-  `$ make target/linux/install`
+  ```$ make target/linux/compile```
+  ```$ make target/linux/install```
   or
-  `$ make target/linux/{clean, compile, install}``
+  ```$ make target/linux/{clean, compile, install}```
 
 
