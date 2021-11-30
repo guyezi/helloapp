@@ -26,7 +26,7 @@ make menuconfig
    make menuconfig
    ```
 
-5. ```
+5. ```bash
    make -j8 download V=99
    make package/luci-app-ssr-plus/clean V=99
    make package/luci-app-ssr-plus/compile V=99
@@ -37,7 +37,7 @@ make menuconfig
    make toolchain/{clean, compile, install}
    ```
 
-6. 重编kernel: ```
+6. 重编kernel: ```bash
 make target/linux/compile
 make target/linux/install
 make target/linux/{clean,compile,install}
@@ -45,7 +45,7 @@ make target/linux/{clean,compile,install}
 
 生成 `Packages` `Packages.gz` `Packages.manifest` :
 
-```
+```bash
 make package/index
 ipkg-make-index.sh . 2>&1 > Packages
 gzip -9c Packages > Packages.gz 
