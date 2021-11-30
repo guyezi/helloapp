@@ -20,13 +20,17 @@ git clone https://github.com/guyezi/helloapp package/helloapp
 make menuconfig
 ```
 
-4. ```bash
+4. Run
+
+```bash
    ./scripts/feeds update -a
    ./scripts/feeds install -a
    make menuconfig
    ```
 
-5. ```bash
+5. Run
+
+ ```bash
    make -j8 download V=99
    make package/luci-app-ssr-plus/clean V=99
    make package/luci-app-ssr-plus/compile V=99
@@ -37,13 +41,15 @@ make menuconfig
    make toolchain/{clean, compile, install}
    ```
 
-6. 重编kernel: ```bash
+6. 重编kernel: 
+
+```bash
 make target/linux/compile
 make target/linux/install
 make target/linux/{clean,compile,install}
 ```
 
-生成 `Packages` `Packages.gz` `Packages.manifest` :
+7. 生成 `Packages` `Packages.gz` `Packages.manifest` :
 
 ```bash
 make package/index
