@@ -10,7 +10,7 @@ sudo apt-get -y install build-essential asciidoc binutils bzip2 gawk gettext git
 
 Centos
 ```bash
-sudo yum install -y bash-completion bzip2 gcc gcc-c++ git make ncurses-devel patch rsync tar unzip wget which diffutils python2 python3 gettext zlib-devel unzip patch openssl-devel ncurses-devel zlib-devel intltool gawk util-linux gcc gcc-c++ flex bzip2 binutils bash asciidoc perl-XML-Parser
+sudo yum install -y bash-completion bzip2 gcc gcc-c++ git make ncurses-devel patch rsync tar unzip wget which diffutils python2 python3 gettext zlib-devel unzip patch openssl-devel ncurses-devel zlib-devel intltool gawk util-linux gcc gcc-c++ flex bzip2 binutils bash asciidoc perl-XML-Parser bison
 ```
 
 3. Run ```bash
