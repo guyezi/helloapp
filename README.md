@@ -53,20 +53,43 @@ make menuconfig
    make toolchain/{clean, compile, install}
    ```
 
-6. 重编kernel: 
+6.  重编kernel: 
 
 ```bash
 make target/linux/compile
 make target/linux/install
 make target/linux/{clean,compile,install}
 ```
-
-7. 生成 `Packages` `Packages.gz` `Packages.manifest` :
+7.  生成 `Packages` `Packages.gz` `Packages.manifest` :
 
 ```bash
 make package/index
 ipkg-make-index.sh . 2>&1 > Packages
 gzip -9c Packages > Packages.gz 
 ```
+8.  编译glibc
+ 
+```bash
+cd /usr/local
+sudo wget https://ftp.gnu.org/gnu/glibc/glibc-2.34.tar.gz
+sudo tar -zxvf glibc-2.34.tar.gz
+```
 
+```bash
+cd /usr/local/glibc-2.34
+su
+mkdir build
+cd build
+../configure --prefix=/usr --disable-profile --enable-add-ons --with-headers=/usr/include --with-binutils=/usr/bin
+make
+make install
+```
+此时如果出现ls目录不能使用的情况，先解决命令不能使用问题。
+LD_PRELOAD=/lib64/libc-2.34.so
+设置软连接
+```bash
+rm /usr/lib64/libc.so.6
+ln -s /usr/lib64/libc-2.17.so /usr/lib64/libc.so.6
+
+```
 
