@@ -37,18 +37,18 @@ make menuconfig
    make toolchain/{clean, compile, install}
    ```
 
-6. 重编kernel: ``` 
-   make target/linux/compile
-   make target/linux/install
-   make target/linux/{clean,compile,install}
-   ```
+6. 重编kernel: ```
+make target/linux/compile
+make target/linux/install
+make target/linux/{clean,compile,install}
+```
 
 生成 `Packages` `Packages.gz` `Packages.manifest` :
 
-   ```
-   make package/index
-   ipkg-make-index.sh . 2>&1 > Packages
-   gzip -9c Packages > Packages.gz 
-   ```
+```
+make package/index
+ipkg-make-index.sh . 2>&1 > Packages
+gzip -9c Packages > Packages.gz 
+```
 
 
