@@ -26,36 +26,36 @@ make menuconfig
    make menuconfig
    ```
 
-5. ```make -j8 download V=99```
+5. ``` make -j8 download V=99 ```
 
-6. ```$ make package/luci-app-ssr-plus/clean V=99```
+6. ``` $ make package/luci-app-ssr-plus/clean V=99 ```
 
-8. ```$ make package/luci-app-ssr-plus/compile V=99```
+8. ``` $ make package/luci-app-ssr-plus/compile V=99 ```
 
-9. ```$ make package/luci-app-ssr-plus/install V=99```
+9. ``` $ make package/luci-app-ssr-plus/install V=99 ```
  
-10. ```$ make package/luci-app-ssr-plus/{clean,compile,install} V=99```
+10. ``` $ make package/luci-app-ssr-plus/{clean,compile,install} V=99 ```
  
-11. ```$ make package/feeds/packages/luci-app-baidupcs-web/{clean,compile,install} V=99```
+11. ``` $ make package/feeds/packages/luci-app-baidupcs-web/{clean,compile,install} V=99 ```
  
-12. ```$ make tools/automake/compile```
+12. ``` $ make tools/automake/compile ```
 
-13. ```$ make toolchain/{clean, compile, install}```
+13. ``` $ make toolchain/{clean, compile, install} ```
 
 重编kernel:
 
-14. ```$ make target/linux/compile```
+14. ``` $ make target/linux/compile ```
 
-15. ```$ make target/linux/install```
+15. ``` $ make target/linux/install ```
 
-16. ```$ make target/linux/{clean,compile,install}```
+16. ``` $ make target/linux/{clean,compile,install} ```
 
 生成 `Packages` `Packages.gz` `Packages.manifest`
 
-17. ```make package/index```
+17. ``` make package/index ```
 
-18. ```ipkg-make-index.sh . 2>&1 > Packages```
+18. ``` ipkg-make-index.sh . 2>&1 > Packages ```
 
-20. ```gzip -9c Packages > Packages.gz```
+20. ``` gzip -9c Packages > Packages.gz ```
 
 
