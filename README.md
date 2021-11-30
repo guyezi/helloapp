@@ -37,9 +37,7 @@ make menuconfig
    make toolchain/{clean, compile, install}
 ```
 
-6.重编kernel:
-
-``` 
+6. 重编kernel: ``` 
    make target/linux/compile
    make target/linux/install
    make target/linux/{clean,compile,install}
